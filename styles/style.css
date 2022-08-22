@@ -77,6 +77,17 @@
     color: rgb(34, 2, 2);
 }
 
+.navbar .active a {
+    color: black;
+}
+
+.navbar .active::after {
+    /* background: #ffdb58; */
+    width: 100%;
+}
+
+/* contents */
+
 .content {
     width: 100%;
     position: absolute;

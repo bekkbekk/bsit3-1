@@ -24,6 +24,70 @@
     color: white;
 }
 
+/* nav */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+    /* cursor: pointer; */
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #800000;
+    font-size: 18px;
+    font-family: GothicBold;
+    text-transform: uppercase;
+
+    transition: 0.5s ease;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(34, 2, 2);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    transition: 0.5s ease;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.navbar ul li a:hover {
+    color: rgb(34, 2, 2);
+}
+
+.navbar .active a {
+    color: black;
+}
+
+.navbar .active::after {
+    /* background: #ffdb58; */
+    width: 100%;
+}
+
+
+/* contents */
+
 body {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/bg1.jpg);
     background-size: cover;
@@ -32,9 +96,9 @@ body {
     background-attachment: fixed;
 }
 
-.wrapper {
-    margin-top: 4%;
-}
+/* .wrapper {
+    margin-top: 2%;
+} */
 
 .wrapper h1 {
     font-family: Poppins;
@@ -64,6 +128,7 @@ body {
     line-height: 20px;
     position: relative;
     border: 1px outset grey;
+    cursor: default;
     
     transition: 0.5s ease;
 }
