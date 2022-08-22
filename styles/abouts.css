@@ -72,6 +72,12 @@ body {
     background: rgba(0, 0, 0, 0.6);
 }
 
+.team .team_member:hover img{
+    animation: RotateImageAnimation;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+}
+
 .team .team_member h3 {
     color: maroon;
     font-size: 26px;
@@ -107,12 +113,6 @@ img {
     width: 100px;
     height: 100px;
     padding: 7px;
-}
-
-.team .team_member .team_img img:hover {
-    animation: RotateImageAnimation;
-    animation-duration: 1.3s;
-    animation-iteration-count: 1;
 }
 
 /* animations */
