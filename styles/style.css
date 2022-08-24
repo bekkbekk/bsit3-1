@@ -37,7 +37,13 @@
 
 .logo {
     width: 200px;
-    /* cursor: pointer; */
+    cursor: pointer;
+}
+
+.menu_icon {
+    width: 25px;
+    display: none;
+    cursor: pointer;
 }
 
 .navbar ul li {
@@ -149,4 +155,84 @@ button:hover span {
 button:hover {
     /* border: none; */
     color: #DFE4FF;
+}
+
+@media only screen and (max-width:700px) {
+
+    /* navigation bar */
+    
+    .logo {
+        width: 120px;
+        cursor: pointer;
+    }
+
+    .navbar ul {
+        width: 100%;
+        background: linear-gradient(#800000, #b00b0b);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: right;
+    }
+
+    .navbar ul li a {
+        color: #fff;
+        font-family: GothicRegular;
+    }
+
+    .navbar .active a {
+        color: #ffdb58;
+    }
+
+    .navbar ul li a:hover {
+        color: #ffdb58;
+    }
+
+    .navbar ul li::after {
+        width: 0%;
+    }
+
+    .navbar ul li:hover::after {
+        width: 0%;
+    }
+
+    .navbar .active::after {
+        width: 0%;
+    }
+
+    #menuList {
+        overflow: hidden;
+
+        transition: 0.5s ease;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+
+
+    /* contents */
+
+    .content h1 {
+        font-size: 50px;
+    }
+
+    .content p {
+        font-size: 15px;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    button {
+        width: 150px;
+        font-size: 12px;
+    }
+
 }

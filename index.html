@@ -4,20 +4,21 @@
 <head>
     <title>BSIT 3-1</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <div class="banner">
         <div class="navbar">
             <img src="images/BSIT 3-1.png" class="logo">
-            <ul>
+            <ul id="menuList">
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="files/abouts.html">Officers</a></li>
                 <li><a href="#">Schedules</a></li>
                 <li><a href="#">Assignments</a></li>
                 <!-- <li><a href="#">Home</a></li> -->
             </ul>
+            <img src="images/menu.png" class="menu_icon" onclick="toggleMenu()">
         </div>
 
         <div class="content">
@@ -29,6 +30,23 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "150px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+
+    </script>
+
 </body>
 
 </html>
