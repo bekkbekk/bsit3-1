@@ -4,18 +4,21 @@
 <head>
     <title>Officers</title>
     <link rel="stylesheet" type="text/css" href="../styles/abouts.css">
+    <link rel="stylesheet" type="text/css" href="../styles/abouts_phone.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body>
     <div class="navbar">
         <img src="../images/BSIT 3-1.png" class="logo">
-        <ul>
+        <ul id="menuList">
             <li><a href="../index.html">Home</a></li>
             <li class="active"><a href="abouts.html">Officers</a></li>
             <li><a href="#">Schedules</a></li>
             <li><a href="#">Assignments</a></li>
         </ul>
+        <img src="../images/menu.png" class="menu_icon" onclick="toggleMenu()">
     </div>
 
     <div class="wrapper">
@@ -80,6 +83,22 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem delectus, rerum accusamus voluptatibus, provident enim velit sit repellendus quis maiores totam placeat expedita! Aliquam, repudiandae. Reiciendis tempora voluptas deleniti libero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure amet totam provident quisquam dolorum repellat voluptatum debitis numquam quod? Nulla beatae velit maiores dignissimos non distinctio qui necessitatibus ut tempore?</p>
         </div>
     </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "150px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+
+    </script>
 
 </body>
 

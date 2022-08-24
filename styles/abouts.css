@@ -39,6 +39,12 @@
     /* cursor: pointer; */
 }
 
+.menu_icon {
+    width: 25px;
+    display: none;
+    cursor: pointer;
+}
+
 .navbar ul li {
     list-style: none;
     display: inline-block;
