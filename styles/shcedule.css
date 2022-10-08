@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-collapse: collapse;
+}
+
+table {
+    /* transform: scale(0.9); */
+}
+
+td {
+    width: 150px;
+}
+
+.subj {
+    background-color: #000000;
+}
+
+.multimedia {
+    background-color: red;
+}
+
+.webdev {
+    background-color: blue;
+}
+
+.fund-of-research {
+    background-color: green;
+}
+
+.it-elective {
+    background-color: yellow;
+}
+
+.sia {
+    background-color: purple;
+}
+
+.art-appre {
+    background-color: pink;
+}
+
+.db-admin {
+    background-color: lightgreen;
+}
